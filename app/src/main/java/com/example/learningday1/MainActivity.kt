@@ -228,13 +228,13 @@ fun MessageCard(headline: String, message: String, image: Int) {
         modifier =
             Modifier
                 // Set image size to 40 dp
-                .size(70.dp)
+                .size(50.dp)
                 // Clip image to be shaped as a circle
                 .clip(CircleShape)
                 .border(2.5.dp, Purple40, CircleShape))
 
     // Add a horizontal space between the image and the column
-    Spacer(modifier = Modifier.width(8.dp))
+    Spacer(modifier = Modifier.width(8.dp).height(14.dp))
 
     Column {
       Text(text = headline, color = White, fontWeight = FontWeight.Bold)
